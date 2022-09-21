@@ -2,17 +2,23 @@ html {
   font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(238, 242, 245)
 }
+
+header{
+  
+}
+.body {
+    width: 70%;
+    margin: auto;
+}
+.navigation-control {
+    display: inline;
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+}
+
