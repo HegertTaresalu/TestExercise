@@ -13,11 +13,18 @@
     <div class="body">
         <header>
             <nav class="navbar navbar-light" style="background-color: white;">
-                <h1>Logo</h1>
-                <div class="navigation-control">
-                <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Avaleht">Avaleht</a>
-                <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Ürituste_lisamine">Ürituste lisamine</a>
-                </div>        
+                <div id="left-logo"> <img src="/img/logo.svg" /></div>
+                    <div class="navigation-control">
+                        <div id="navigation">
+                            <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Avaleht">Avaleht</a>
+                        </div>
+                         <div id="navigation">
+                            <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Ürituste_lisamine">Ürituste lisamine</a>
+                         </div>
+                    </div>        
+                <div id="right-logo">
+                    <img src="/img/symbol.svg" />
+                </div>
             </nav>
 
                     

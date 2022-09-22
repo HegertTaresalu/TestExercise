@@ -1,3 +1,7 @@
+:root{
+    --blue-color: rgb(0,90,161);
+}
+
 html {
   font-size: 14px;
 }
@@ -6,19 +10,56 @@ body {
     margin-bottom: 60px;
     background-color: rgb(238, 242, 245)
 }
-
+#left-logo{
+    margin-left:2.5%;
+}
+#right-logo{
+    margin-right:2.5%;
+    margin-top:1%;
+    margin-bottom:1%;
+}
 header{
-  
+  margin-top:1.5rem;
 }
 .body {
     width: 70%;
     margin: auto;
 }
+.navbar{
+    padding:0;
+}
 .navigation-control {
     display: inline;
     width: 60%;
+    justify-content:left;
     margin: auto;
-    margin-top: 2%;
+    margin-bottom:0;
+    margin-top:0;
     display: flex;
+    height:5rem;
 }
 
+.main-nav-redirect {
+    text-decoration: none;
+}
+#navigation{
+    display:flex;
+    align-content:center;
+    align-items:center;
+    height:100%;
+    margin-right: 1rem;
+    text-align:center;
+    
+}
+.upper-grid{
+    display:flex;
+    flex-direction:row;
+}
+
+#grid-image{
+    width:50%;
+    height:auto;
+}
+#text{
+    display:inline-block;
+}
