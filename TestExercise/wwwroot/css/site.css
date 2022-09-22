@@ -64,6 +64,7 @@ header{
 .upper-grid{
     display:flex;
     flex-direction:row;
+    margin-bottom:2rem;
 }
 
 #grid-image{
