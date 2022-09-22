@@ -10,6 +10,11 @@ body {
     margin-bottom: 60px;
     background-color: rgb(238, 242, 245)
 }
+
+.container{
+    margin:0;
+    padding:0;
+}
 #left-logo{
     margin-left:2.5%;
 }
@@ -18,9 +23,14 @@ body {
     margin-top:1%;
     margin-bottom:1%;
 }
+
+
 header{
   margin-top:1.5rem;
+  margin-bottom:2rem;
 }
+
+
 .body {
     width: 70%;
     margin: auto;
@@ -61,5 +71,11 @@ header{
     height:auto;
 }
 #text{
-    display:inline-block;
+    padding:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    color:white;
+    background-color: var(--blue-color);
 }
