@@ -6,37 +6,49 @@
 
 <h1>Create</h1>
 
-<h4>EventModel</h4>
-<hr />
+
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StartDate" class="control-label"></label>
-                <input asp-for="StartDate" class="form-control" />
-                <span asp-validation-for="StartDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EventLocation" class="control-label"></label>
-                <input asp-for="EventLocation" class="form-control" />
-                <span asp-validation-for="EventLocation" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ExtraInfo" class="control-label"></label>
-                <input asp-for="ExtraInfo" class="form-control" />
-                <span asp-validation-for="ExtraInfo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        <div class="col-md-6">
+                <h4>Ürituse lisamine</h4>
+
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group row mb-2">
+                    <label asp-for="Name" class="col-sm-2 col-form-label">Ürituse nimi</label>
+                     <div class="col-sm-10">
+                        <input asp-for="Name" class="form-control" />
+                     </div>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group row mb-2">
+                    <label asp-for="StartDate" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="StartDate" class="form-control" />
+                    </div>
+                    <span asp-validation-for="StartDate" class="text-danger"></span>
+                </div>
+                <div class="form-group row mb-2">
+                    <label asp-for="EventLocation" class="col-sm-2 col-form-label"></label>
+                     <div class="col-sm-10">
+                     <input asp-for="EventLocation" class="form-control" />
+                     </div>
+                    <span asp-validation-for="EventLocation" class="text-danger"></span>
+                </div>
+                <div class="form-group row mb-2">
+                    <label asp-for="ExtraInfo" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="ExtraInfo" class="form-control" />
+                    </div>
+                    <span asp-validation-for="ExtraInfo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+                
+
+
+            </form>
+        </div>
 </div>
 
 <div>

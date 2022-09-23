@@ -103,3 +103,15 @@ header{
     color:white;
     background-color: var(--blue-color);
 }
+
+.row{
+    display:flex;
+    justify-items:center;
+    justify-content:center;
+}
+.row h4{
+margin-bottom:2rem;
+}
+.upper-picture{
+    
+}

@@ -22,7 +22,7 @@
                             <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Index">Avaleht</a>
                         </div>
                          <div id="navigation-event">
-                            <a class="main-nav-redirect" asp-area="" asp-controller="EventModels" asp-action="Index">Ürituste lisamine</a>
+                            <a class="main-nav-redirect" asp-area="" asp-controller="EventModels" asp-action="Create">Ürituste lisamine</a>
                          </div>
                     </div>        
                 <div id="right-logo">
@@ -39,7 +39,7 @@
                 </style>
              }
              
-             else if(ViewData["Title"].ToString() == "Index")
+             else if(ViewData["Title"].ToString() == "Create")
              {
                  //vaata kuidas seda korda teha et näeks värvi
                   <style>
