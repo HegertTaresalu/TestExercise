@@ -113,5 +113,17 @@ header{
 margin-bottom:2rem;
 }
 .upper-picture{
-    
+    display:flex;
+    justify-content:right;
+}
+
+.image-container {
+    width: 75%;
+    height: 5rem;
+    background-image: url("../img/libled.jpg");
+}
+.category-text{
+    background-color: var(--blue-color);
+    height:5rem;
+    width:25%;
 }
