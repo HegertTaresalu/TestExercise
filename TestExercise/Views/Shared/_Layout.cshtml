@@ -11,24 +11,49 @@
 <body>
 
     <div class="body">
+
+        
+
         <header>
             <nav class="navbar navbar-light" style="background-color: white;">
                 <div id="left-logo"> <img src="/img/logo.svg" /></div>
                     <div class="navigation-control">
-                        <div id="navigation">
-                            <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Avaleht">Avaleht</a>
+                        <div id="navigation-home">
+                            <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Index">Avaleht</a>
                         </div>
-                         <div id="navigation">
-                            <a class="main-nav-redirect" asp-area="" asp-controller="Home" asp-action="Ürituste_lisamine">Ürituste lisamine</a>
+                         <div id="navigation-event">
+                            <a class="main-nav-redirect" asp-area="" asp-controller="EventModels" asp-action="Index">Ürituste lisamine</a>
                          </div>
                     </div>        
                 <div id="right-logo">
                     <img src="/img/symbol.svg" />
                 </div>
             </nav>
+            @if(ViewData["Title"].ToString() == "Home Page")
+             {
+                <style>
+                    #navigation-home{background-color: rgb(0,90,161)}
+                    #navigation-home .main-nav-redirect{color:White;}
 
+
+                </style>
+             }
+             
+             else if(ViewData["Title"].ToString() == "Index")
+             {
+                 //vaata kuidas seda korda teha et näeks värvi
+                  <style>
+                      #navigation-event{background-color: rgb(0,90,161);}
+                      #navigation-event .main-nav-redirect{color:White;}
+
+
+                  </style>
+             }
                     
         </header>
+
+
+
         <div class="container">
             <main role="main" class="pb-3">
                 @RenderBody()
